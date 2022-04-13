@@ -14,7 +14,7 @@ vid_sources = namespace(
 )
 
 images = namespace(
-    source_dir="yolox_x/images/"             # Path to input videos
+    source_dir="images/"             # Path to input videos
 )
 
 post_process = namespace(

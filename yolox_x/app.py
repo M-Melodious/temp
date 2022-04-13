@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-from .yolox.visualize import concat_tile
+from yolox.visualize import concat_tile
 
-from .config import images, visualization
+from config import images, visualization
 
 from pathlib import Path
 
@@ -16,4 +16,11 @@ def main():
 
 
     tile = concat_tile([imgs[:2], imgs[2:]])
+    Path(visualization.output_dir).mkdir(exist_ok=True)
     cv2.imwrite(f"{visualization.output_dir}/demo.png", tile)
+
+
+
+
+if __name__ == '__main__':
+    main()
