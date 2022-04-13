@@ -23,7 +23,7 @@ post_process = namespace(
 )
 
 visualization = namespace(
-    output_dir="./demo_output",        # Path to output dir, default: ./demo_output
+    output_dir="./data",        # Path to output dir, default: ./demo_output
     max_window_size=(1920, 1080),      # Max window size to display, default: (1920, 1080)
     target_size=(1280, 960)            # Target size for video writer, default: (1280, 960)
 )
